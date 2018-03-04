@@ -17,7 +17,7 @@ class WindowController: NSWindowController {
 //    window?.titleVisibility = .hidden
 //
 //    2
-//    window?.styleMask = .borderless
+//    window?.styleMask.remove(.titled)
 //
 //    3
 //    let visualEffect = NSVisualEffectView()
@@ -33,9 +33,8 @@ class WindowController: NSWindowController {
 //    visualEffect.material = .dark
 //    window?.contentView = visualEffect
 //
-//    window?.titlebarAppearsTransparent = true;
+//    window?.titlebarAppearsTransparent = true
 //    window?.styleMask.insert(.fullSizeContentView)
-//    window?.isOpaque = false
 //
 //    5
 //    let visualEffect = NSVisualEffectView()
@@ -45,7 +44,6 @@ class WindowController: NSWindowController {
 //    window?.contentView = visualEffect
 //
 //    window?.styleMask.remove(.titled)
-//    window?.isOpaque = false
 //    window?.isMovableByWindowBackground = true
 //
 //    6
@@ -59,7 +57,6 @@ class WindowController: NSWindowController {
 //    window?.titleVisibility = .hidden
 //    window?.styleMask.remove(.titled)
 //    window?.backgroundColor = .clear
-//    window?.isOpaque = false
 //    window?.isMovableByWindowBackground = true
 //
 //    window?.contentView?.addSubview(visualEffect)
@@ -74,15 +71,12 @@ class WindowController: NSWindowController {
 //    visualEffect.bottomAnchor.constraint(equalTo: constraints.bottomAnchor).isActive = true
 //
 //    7
-//    window?.titlebarAppearsTransparent = true;
-//    window?.styleMask.insert(.fullSizeContentView)
-//    window?.isOpaque = false
+//    window?.titlebarAppearsTransparent = true
 //
 //    8
-//    window?.titlebarAppearsTransparent = true;
-//    window?.isOpaque = false
+//    window?.titlebarAppearsTransparent = true
 //    window?.backgroundColor = .red
-//
+
 //    9
 //    let customToolbar = NSToolbar()
 //    window?.titleVisibility = .hidden
@@ -90,21 +84,21 @@ class WindowController: NSWindowController {
 //
 //    10
 //    let customToolbar = NSToolbar()
-//    window?.titlebarAppearsTransparent = true;
+//    window?.titlebarAppearsTransparent = true
 //    window?.titleVisibility = .hidden
 //    window?.toolbar = customToolbar
 //
 //    11
 //    let customToolbar = NSToolbar()
 //    customToolbar.showsBaselineSeparator = false
-//    window?.titlebarAppearsTransparent = true;
+//    window?.titlebarAppearsTransparent = true
 //    window?.titleVisibility = .hidden
 //    window?.toolbar = customToolbar
 //
 //    12
 //    let customToolbar = NSToolbar()
 //    customToolbar.showsBaselineSeparator = false
-//    window?.titlebarAppearsTransparent = true;
+//    window?.titlebarAppearsTransparent = true
 //    window?.titleVisibility = .hidden
 //    window?.backgroundColor = .red
 //    window?.toolbar = customToolbar

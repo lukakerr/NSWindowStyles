@@ -33,7 +33,7 @@ Hide the titlebar completely.
 </p>
 
 ```swift
-window?.styleMask = .borderless
+window?.styleMask.remove(.titled)
 ```
 
 ### 3. Vibrant background
@@ -76,9 +76,8 @@ visualEffect.state = .active
 visualEffect.material = .dark
 window?.contentView = visualEffect
 
-window?.titlebarAppearsTransparent = true;
+window?.titlebarAppearsTransparent = true
 window?.styleMask.insert(.fullSizeContentView)
-window?.isOpaque = false
 ```
 
 ### 5. Vibrant background without titlebar
@@ -97,7 +96,6 @@ visualEffect.material = .dark
 window?.contentView = visualEffect
 
 window?.styleMask.remove(.titled)
-window?.isOpaque = false
 window?.isMovableByWindowBackground = true
 ```
 
@@ -120,7 +118,6 @@ visualEffect.layer?.cornerRadius = 16.0
 window?.titleVisibility = .hidden
 window?.styleMask.remove(.titled)
 window?.backgroundColor = .clear
-window?.isOpaque = false
 window?.isMovableByWindowBackground = true
 
 window?.contentView?.addSubview(visualEffect)
@@ -144,9 +141,7 @@ A window with a transparent titlebar.
 </p>
 
 ```swift
-window?.titlebarAppearsTransparent = true;
-window?.styleMask.insert(.fullSizeContentView)
-window?.isOpaque = false
+window?.titlebarAppearsTransparent = true
 ```
 
 ### 8. Transparent titlebar with background color
@@ -158,8 +153,7 @@ Same as above with a background color.
 </p>
 
 ```swift
-window?.titlebarAppearsTransparent = true;
-window?.isOpaque = false
+window?.titlebarAppearsTransparent = true
 window?.backgroundColor = .red
 ```
 
@@ -187,7 +181,7 @@ Same as above, with the toolbar transparent.
 
 ```swift
 let customToolbar = NSToolbar()
-window?.titlebarAppearsTransparent = true;
+window?.titlebarAppearsTransparent = true
 window?.titleVisibility = .hidden
 window?.toolbar = customToolbar
 ```
@@ -203,7 +197,7 @@ Same as above, without the toolbar seperator.
 ```swift
 let customToolbar = NSToolbar()
 customToolbar.showsBaselineSeparator = false
-window?.titlebarAppearsTransparent = true;
+window?.titlebarAppearsTransparent = true
 window?.titleVisibility = .hidden
 window?.toolbar = customToolbar
 ```
@@ -219,7 +213,7 @@ Same as above, with a background color.
 ```swift
 let customToolbar = NSToolbar()
 customToolbar.showsBaselineSeparator = false
-window?.titlebarAppearsTransparent = true;
+window?.titlebarAppearsTransparent = true
 window?.titleVisibility = .hidden
 window?.backgroundColor = .red
 window?.toolbar = customToolbar
