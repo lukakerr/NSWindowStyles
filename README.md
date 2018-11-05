@@ -17,7 +17,7 @@ If you have a style to add, please make a pull request.
 Don't show the title text in the titlebar.
 
 <p align="center">
-  <img src="./Images/1.png">
+  <img src="./Images/1.png" width="720">
 </p>
 
 ```swift
@@ -29,7 +29,7 @@ window?.titleVisibility = .hidden
 Hide the titlebar completely.
 
 <p align="center">
-  <img src="./Images/2.png">
+  <img src="./Images/2.png" width="620">
 </p>
 
 ```swift
@@ -41,7 +41,7 @@ window?.styleMask.remove(.titled)
 Create a vibrant background where whatever is behind the window can be slightly seen. This uses `NSVisualEffectView`.
 
 <p align="center">
-  <img src="./Images/3.png">
+  <img src="./Images/3.png" width="620">
 </p>
 
 ```swift
@@ -66,7 +66,7 @@ window?.contentView = visualEffect
 Same as above, with a transparent titlebar.
 
 <p align="center">
-  <img src="./Images/4.png">
+  <img src="./Images/4.png" width="620">
 </p>
 
 ```swift
@@ -85,7 +85,7 @@ window?.styleMask.insert(.fullSizeContentView)
 Same as above, without the titlebar.
 
 <p align="center">
-  <img src="./Images/5.png">
+  <img src="./Images/5.png" width="620">
 </p>
 
 ```swift
@@ -104,7 +104,7 @@ window?.isMovableByWindowBackground = true
 A vibrant window with a custom border radius. The border radius value can be changed at `visualEffect.layer?.cornerRadius = 16.0`.
 
 <p align="center">
-  <img src="./Images/6.png">
+  <img src="./Images/6.png" width="620">
 </p>
 
 ```swift
@@ -137,7 +137,7 @@ visualEffect.bottomAnchor.constraint(equalTo: constraints.bottomAnchor).isActive
 A window with a transparent titlebar.
 
 <p align="center">
-  <img src="./Images/7.png">
+  <img src="./Images/7.png" width="720">
 </p>
 
 ```swift
@@ -149,7 +149,7 @@ window?.titlebarAppearsTransparent = true
 Same as above with a background color.
 
 <p align="center">
-  <img src="./Images/8.png">
+  <img src="./Images/8.png" width="720">
 </p>
 
 ```swift
@@ -162,7 +162,7 @@ window?.backgroundColor = .red
 A window with a toolbar.
 
 <p align="center">
-  <img src="./Images/9.png">
+  <img src="./Images/9.png" width="720">
 </p>
 
 ```swift
@@ -176,7 +176,7 @@ window?.toolbar = customToolbar
 Same as above, with the toolbar transparent.
 
 <p align="center">
-  <img src="./Images/10.png">
+  <img src="./Images/10.png" width="720">
 </p>
 
 ```swift
@@ -191,7 +191,7 @@ window?.toolbar = customToolbar
 Same as above, without the toolbar seperator.
 
 <p align="center">
-  <img src="./Images/11.png">
+  <img src="./Images/11.png" width="720">
 </p>
 
 ```swift
@@ -207,7 +207,7 @@ window?.toolbar = customToolbar
 Same as above, with a background color.
 
 <p align="center">
-  <img src="./Images/12.png">
+  <img src="./Images/12.png" width="720">
 </p>
 
 ```swift
@@ -224,7 +224,7 @@ window?.toolbar = customToolbar
 A translucent toolbar allowing for content behind the toolbar to be slightly seen.
 
 <p align="center">
-  <img src="./Images/13.png">
+  <img src="./Images/13.png" width="720">
 </p>
 
 ```swift
@@ -241,7 +241,7 @@ window?.toolbar = customToolbar
 Same as above with a titlebar instead of a toolbar.
 
 <p align="center">
-  <img src="./Images/14.png">
+  <img src="./Images/14.png" width="720">
 </p>
 
 ```swift
@@ -256,7 +256,7 @@ window?.contentView?.layer?.contents = NSImage(named: NSImage.Name(rawValue: "Ba
 Same as above with a transparent titlebar.
 
 <p align="center">
-  <img src="./Images/15.png">
+  <img src="./Images/15.png" width="720">
 </p>
 
 ```swift
@@ -271,7 +271,7 @@ window?.contentView?.layer?.contents = NSImage(named: NSImage.Name(rawValue: "Ba
 The macOS Mojave dark mode appearance.
 
 <p align="center">
-<img src="./Images/16.png">
+<img src="./Images/16.png" width="720">
 </p>
 
 ```swift
