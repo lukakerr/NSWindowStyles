@@ -108,21 +108,26 @@ class WindowController: NSWindowController {
 //    window?.titleVisibility = .hidden
 //    window?.styleMask.insert(.fullSizeContentView)
 //    window?.contentView?.wantsLayer = true
-//    window?.contentView?.layer?.contents = NSImage(named: NSImage.Name(rawValue: "Background"))
+//    window?.contentView?.layer?.contents = NSImage(named: NSImage.Name("Background"))
 //    window?.toolbar = customToolbar
 //
 //    14
 //    window?.titleVisibility = .hidden
 //    window?.styleMask.insert(.fullSizeContentView)
 //    window?.contentView?.wantsLayer = true
-//    window?.contentView?.layer?.contents = NSImage(named: NSImage.Name(rawValue: "Background"))
+//    window?.contentView?.layer?.contents = NSImage(named: NSImage.Name("Background"))
 //
 //    15
 //    window?.titleVisibility = .hidden
 //    window?.styleMask.insert(.fullSizeContentView)
 //    window?.titlebarAppearsTransparent = true
 //    window?.contentView?.wantsLayer = true
-//    window?.contentView?.layer?.contents = NSImage(named: NSImage.Name(rawValue: "Background"))
+//    window?.contentView?.layer?.contents = NSImage(named: NSImage.Name("Background"))
+//
+//    16
+//    if #available(OSX 10.14, *) {
+//      window?.appearance = NSAppearance(named: .darkAqua)
+//    }
   }
   
 }

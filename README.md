@@ -266,3 +266,16 @@ window?.titlebarAppearsTransparent = true
 window?.contentView?.wantsLayer = true
 window?.contentView?.layer?.contents = NSImage(named: NSImage.Name(rawValue: "Background"))
 ```
+### 16. macOS Mojave dark mode
+
+The macOS Mojave dark mode appearance.
+
+<p align="center">
+<img src="./Images/16.png">
+</p>
+
+```swift
+if #available(OSX 10.14, *) {
+  window?.appearance = NSAppearance(named: .darkAqua)
+}
+```
