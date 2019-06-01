@@ -1,6 +1,6 @@
 # Swift NSWindow Style Showcase
 
-[![Swift 4.2](https://img.shields.io/badge/swift-4.2-orange.svg?style=flat)](https://github.com/apple/swift)
+[![Swift 5](https://img.shields.io/badge/swift-5-orange.svg?style=flat)](https://github.com/apple/swift)
 [![Platform](http://img.shields.io/badge/platform-macOS-red.svg?style=flat)](https://developer.apple.com/macos/)
 [![Github](http://img.shields.io/badge/github-lukakerr-green.svg?style=flat)](https://github.com/lukakerr)
 
@@ -266,6 +266,7 @@ window?.titlebarAppearsTransparent = true
 window?.contentView?.wantsLayer = true
 window?.contentView?.layer?.contents = NSImage(named: NSImage.Name("Background"))
 ```
+
 ### 16. macOS Mojave dark mode
 
 The macOS Mojave dark mode appearance.
