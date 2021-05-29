@@ -132,9 +132,9 @@ visualEffect.topAnchor.constraint(equalTo: constraints.topAnchor).isActive = tru
 visualEffect.bottomAnchor.constraint(equalTo: constraints.bottomAnchor).isActive = true
 ```
 
-### 7. Vibrant background with border radius and transparent titlebar
+### 7. Vibrant background with transparent titlebar and no window controls
 
-A vibrant window with a standard border radius.
+A vibrant window with a standard border radius and no window controls or title.
 
 <p align="center">
     <img src="./Images/vibrant-w-radius.png" width="620">
