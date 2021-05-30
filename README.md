@@ -99,7 +99,7 @@ window?.styleMask.remove(.titled)
 window?.isMovableByWindowBackground = true
 ```
 
-### 6. Vibrant background with border radius and no titlebar
+### 6. Vibrant background with custom border radius and no titlebar
 
 A vibrant window with a custom border radius. The border radius value can be changed at `visualEffect.layer?.cornerRadius = 16.0`.
 
@@ -132,7 +132,35 @@ visualEffect.topAnchor.constraint(equalTo: constraints.topAnchor).isActive = tru
 visualEffect.bottomAnchor.constraint(equalTo: constraints.bottomAnchor).isActive = true
 ```
 
-### 7. Transparent titlebar
+### 7. Vibrant background with transparent titlebar and no window controls
+
+A vibrant window with a standard border radius and no window controls or title.
+
+<p align="center">
+    <img src="./Images/vibrant-w-radius.png" width="620">
+</p>
+
+```swift
+let visualEffect = NSVisualEffectView()
+visualEffect.blendingMode = .behindWindow
+visualEffect.state = .active
+visualEffect.material = .dark
+window?.contentView = visualEffect
+
+window?.styleMask.insert(.titled)
+
+window?.titlebarAppearsTransparent = true
+window?.titleVisibility = .hidden
+
+window?.standardWindowButton(.miniaturizeButton)?.isHidden = true
+window?.standardWindowButton(.closeButton)?.isHidden = true
+window?.standardWindowButton(.zoomButton)?.isHidden = true
+
+window?.isMovableByWindowBackground = true
+```
+
+
+### 8. Transparent titlebar
 
 A window with a transparent titlebar.
 
@@ -144,7 +172,7 @@ A window with a transparent titlebar.
 window?.titlebarAppearsTransparent = true
 ```
 
-### 8. Transparent titlebar with background color
+### 9. Transparent titlebar with background color
 
 Same as above with a background color.
 
@@ -157,7 +185,7 @@ window?.titlebarAppearsTransparent = true
 window?.backgroundColor = .red
 ```
 
-### 9. Toolbar
+### 10. Toolbar
 
 A window with a toolbar.
 
@@ -171,7 +199,7 @@ window?.titleVisibility = .hidden
 window?.toolbar = customToolbar
 ```
 
-### 10. Transparent toolbar
+### 11. Transparent toolbar
 
 Same as above, with the toolbar transparent.
 
@@ -186,7 +214,7 @@ window?.titleVisibility = .hidden
 window?.toolbar = customToolbar
 ```
 
-### 11. Transparent toolbar without seperator
+### 12. Transparent toolbar without seperator
 
 Same as above, without the toolbar seperator.
 
@@ -202,7 +230,7 @@ window?.titleVisibility = .hidden
 window?.toolbar = customToolbar
 ```
 
-### 12. Transparent toolbar with background color and without seperator
+### 13. Transparent toolbar with background color and without seperator
 
 Same as above, with a background color.
 
@@ -219,7 +247,7 @@ window?.backgroundColor = .red
 window?.toolbar = customToolbar
 ```
 
-### 13. Translucent toolbar
+### 14. Translucent toolbar
 
 A translucent toolbar allowing for content behind the toolbar to be slightly seen.
 
@@ -236,7 +264,7 @@ window?.contentView?.layer?.contents = NSImage(named: NSImage.Name("Background")
 window?.toolbar = customToolbar
 ```
 
-### 14. Translucent titlebar
+### 15. Translucent titlebar
 
 Same as above with a titlebar instead of a toolbar.
 
@@ -251,7 +279,7 @@ window?.contentView?.wantsLayer = true
 window?.contentView?.layer?.contents = NSImage(named: NSImage.Name("Background"))
 ```
 
-### 15. Transparent titlebar without title
+### 16. Transparent titlebar without title
 
 Same as above with a transparent titlebar.
 
@@ -267,7 +295,7 @@ window?.contentView?.wantsLayer = true
 window?.contentView?.layer?.contents = NSImage(named: NSImage.Name("Background"))
 ```
 
-### 16. macOS Mojave dark mode
+### 17. macOS Mojave dark mode
 
 The macOS Mojave dark mode appearance.
 
